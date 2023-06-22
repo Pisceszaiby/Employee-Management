@@ -1,3 +1,9 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -6,38 +12,76 @@
   background-color: blue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+  border: #379DFB solid 2px;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 60%;
+  padding: 20px;
+  text-align: left;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title-svg {
+  margin-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.asterisk {
+  color: red;
 }
 
-.App-link {
-  color: #61dafb;
+
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #379DFB;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+form h1 {
+  color: #379DFB;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 600;
 
-  to {
-    transform: rotate(360deg);
-  }
+
+}
+
+.submit {
+  color: #FFF;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #379DFB;
+  margin: 0 10px 0 0;
+
+}
+
+.clear {
+  color: #FFF;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #379DFB;
+}
+
+nav {
+  padding: 5px;
+  background-color: #379DFB;
+}
+
+.navbar-brand {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar-brand img {}
+
+.navbar-text {
+  color: #FFF;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 500;
 }

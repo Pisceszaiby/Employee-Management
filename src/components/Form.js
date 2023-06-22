@@ -44,11 +44,15 @@ function Form() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <div className="row g-3 align-items-center">
-                <div className="col-auto">
-                    <label htmlFor="firstName" className="col-form-label">First Name</label>
+            <div className='employeeHeading'><h1>New Employee</h1></div>
+
+
+            <div className="row mb-3">
+                <div className="col-sm-3 ">
+                    <label htmlFor="firstName" className="col-sm-12 col-form-label">First Name <span class="asterisk">*</span></label>
+
                 </div>
-                <div className="col-auto">
+                <div className="col-sm-9">
                     <input
                         type="text"
                         required
@@ -61,11 +65,12 @@ function Form() {
                 </div>
             </div>
 
-            <div className="row g-3 align-items-center">
-                <div className="col-auto">
-                    <label htmlFor="lastName" className="col-form-label">Last Name</label>
+            <div className="row mb-3">
+                <div className="col-sm-3">
+                    <label htmlFor="lastName" className="col-sm-12 col-form-label">Last Name <span class="asterisk">*</span></label>
+
                 </div>
-                <div className="col-auto">
+                <div className="col-sm-9">
                     <input
                         type="text"
                         required
@@ -76,13 +81,15 @@ function Form() {
                         onChange={event => setLastName(event.target.value)}
                     />
                 </div>
+
             </div>
 
-            <div className="row g-3 align-items-center">
-                <div className="col-auto">
-                    <label htmlFor="email" className="col-form-label">Email</label>
+            <div className="row mb-3">
+                <div className="col-sm-3">
+                    <label htmlFor="email" className=" col-sm-12 col-form-label">Email <span class="asterisk">*</span></label>
+
                 </div>
-                <div className="col-auto">
+                <div className="col-sm-9">
                     <input
                         type="email"
                         required
@@ -95,11 +102,12 @@ function Form() {
                 </div>
             </div>
 
-            <div className="row g-3 align-items-center">
-                <div className="col-auto">
-                    <label htmlFor="phone" className="col-form-label">Phone</label>
+            <div className="row mb-3">
+                <div className="col-sm-3">
+                    <label htmlFor="phone" className="col-sm-12 col-form-label">Phone <span class="asterisk">*</span></label>
+
                 </div>
-                <div className="col-auto">
+                <div className="col-sm-9">
                     <input
                         type="tel"
                         required
@@ -112,8 +120,8 @@ function Form() {
                 </div>
             </div>
 
-            <button type="submit" className="btn btn-primary">Submit</button>
-            <button type="reset" className="btn btn-primary" onClick={handleReset}>Clear</button>
+            <button type="submit" className=" ml-auto btn submit btn-primary">ADD</button>
+            <button type="reset" className="btn clear btn-primary" onClick={handleReset}>Clear All</button>
         </form>
     );
 }
