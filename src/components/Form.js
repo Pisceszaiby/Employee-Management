@@ -109,7 +109,7 @@ function Form() {
                 </div>
                 <div className="col-sm-9">
                     <input
-                        type="tel"
+                        type="number"
                         required
                         id="phone"
                         className="form-control"
