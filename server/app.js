@@ -22,7 +22,7 @@ mongoose.connect("mongodb://localhost:27017/EmployeeDB", { useNewUrlParser: true
 const employeeSchema = {
     _id: Object,
     firstName: String,
-    secondName: String,
+    lastName: String,
     email: String,
     phone: String,
 
@@ -45,7 +45,7 @@ app.route("/submit").post(async function (req, res) {
     const newEmp = new Employee({
         _id: new mongoose.Types.ObjectId(),
         firstName: req.body.firstName,
-        secondName: req.body.secondName,
+        lastName: req.body.lastName,
         email: req.body.email,
         phone: req.body.phone,
     });
@@ -57,6 +57,14 @@ app.route("/submit").post(async function (req, res) {
     }
 });
 
+app.route("/employees/:id").delete(async function (req, res) {
+    try {
+        const deletedEmp = await Employee.deleteOne({ phone: req.params.id });
+        res.send(deletedEmp);
+    } catch (err) {
+        console.log(err);
+    }
+});
 
 app.listen(4000, function () {
     console.log("Server started on port 4000");
