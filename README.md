@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+Demo Video: https://github.com/Pisceszaiby/Employee-Management/blob/master/public/Meeting%20in%20_General_-20230622_211051-Meeting%20Recording.mp4
 ## Available Scripts
 
 In the project directory, you can run:
